@@ -1,0 +1,10 @@
+com/teamsix/book/entity/Book.class
+com/teamsix/book/service/BookService.class
+com/teamsix/book/persistence/BookDao.class
+com/teamsix/book/presentation/BookPresentation.class
+com/teamsix/book/persistence/BookDaoImpl.class
+com/teamsix/book/client/BookSpringFramework.class
+com/teamsix/book/client/BookConfiguration.class
+com/teamsix/book/database/BookDatabase.class
+com/teamsix/book/service/BookServiceImpl.class
+com/teamsix/book/presentation/BookPresentationImpl.class

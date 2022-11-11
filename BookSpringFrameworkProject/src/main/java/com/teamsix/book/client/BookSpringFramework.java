@@ -7,9 +7,9 @@
 package com.teamsix.book.client;
 
 import com.teamsix.book.presentation.BookPresentation;
-import com.teamsix.book.presentation.BookPresentationImpl;
 
 import java.util.Scanner;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class BookSpringFramework {
 
@@ -17,7 +17,9 @@ public class BookSpringFramework {
         
         Scanner sc = new Scanner(System.in);
         
-        BookPresentation bookPresentation = new BookPresentationImpl();
+        AnnotationConfigApplicationContext springContainer = new AnnotationConfigApplicationContext(BookConfiguration.class);
+        
+        BookPresentation bookPresentation = (BookPresentation)springContainer.getBean("bkPresentation");
         
         while(true) {
             

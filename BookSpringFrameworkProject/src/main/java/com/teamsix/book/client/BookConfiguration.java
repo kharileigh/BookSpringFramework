@@ -26,7 +26,7 @@ public class BookConfiguration {
             return new BookServiceImpl(getPersistence());
     }
 
-    @Bean(name="empPresentation")
+    @Bean(name="bkPresentation")
     public BookPresentationImpl getBookPresentation() {
             //Setter Injection
             BookPresentationImpl presentation=new BookPresentationImpl();

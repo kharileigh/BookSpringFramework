@@ -1,6 +1,6 @@
 /**
  *
- * @author kharileigh
+ * @author lidija
  * <------- STEP 4 : CREATE DATA ACCESS OBJECT ----->
  * 
  */

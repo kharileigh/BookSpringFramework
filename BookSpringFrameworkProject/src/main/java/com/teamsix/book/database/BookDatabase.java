@@ -1,6 +1,6 @@
 /**
  *
- * @author kharileigh
+ * @author lidija
  * <------ STEP 2 : BLUEPRINT OF DATABASE (Book List) ----->
  * <------ STEP 3 : MIMIC DATABASE - map of Book object & put into Book List ----->
  */
