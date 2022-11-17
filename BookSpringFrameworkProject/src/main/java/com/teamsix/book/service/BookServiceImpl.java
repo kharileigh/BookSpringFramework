@@ -31,13 +31,14 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public boolean addBook(Book book) {
-        // create new object and use Dao to search 
-        Book newBook = bookDao.searchRecord(book.getBookId());
-        if(newBook != null) {
-            return false;
-        } else {
-            bookDao.insertRecord(book);
+        
+        if (bookDao.insertRecord(book) > 0) {
+            
             return true;
+            
+        } else {
+            
+            return false;
         }
     }
     

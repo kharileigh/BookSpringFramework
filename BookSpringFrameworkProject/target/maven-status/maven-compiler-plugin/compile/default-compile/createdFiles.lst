@@ -5,6 +5,5 @@ com/teamsix/book/presentation/BookPresentation.class
 com/teamsix/book/persistence/BookDaoImpl.class
 com/teamsix/book/client/BookSpringFramework.class
 com/teamsix/book/client/BookConfiguration.class
-com/teamsix/book/database/BookDatabase.class
 com/teamsix/book/service/BookServiceImpl.class
 com/teamsix/book/presentation/BookPresentationImpl.class
