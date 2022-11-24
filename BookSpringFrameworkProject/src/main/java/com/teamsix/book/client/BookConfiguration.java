@@ -12,6 +12,7 @@ import com.teamsix.book.service.BookServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+// TESTING PROJECT
 @Configuration
 public class BookConfiguration {
     
