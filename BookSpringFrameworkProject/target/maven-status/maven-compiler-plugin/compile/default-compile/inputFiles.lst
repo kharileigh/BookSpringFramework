@@ -1,5 +1,6 @@
 /Users/kharileigh/Desktop/WILEY/BookSpringFramework/BookSpringFrameworkProject/src/main/java/com/teamsix/book/entity/Book.java
 /Users/kharileigh/Desktop/WILEY/BookSpringFramework/BookSpringFrameworkProject/src/main/java/com/teamsix/book/presentation/BookPresentation.java
+/Users/kharileigh/Desktop/WILEY/BookSpringFramework/BookSpringFrameworkProject/src/main/java/com/teamsix/book/persistence/BookRowMapper.java
 /Users/kharileigh/Desktop/WILEY/BookSpringFramework/BookSpringFrameworkProject/src/main/java/com/teamsix/book/service/BookServiceImpl.java
 /Users/kharileigh/Desktop/WILEY/BookSpringFramework/BookSpringFrameworkProject/src/main/java/com/teamsix/book/client/BookSpringFramework.java
 /Users/kharileigh/Desktop/WILEY/BookSpringFramework/BookSpringFrameworkProject/src/main/java/com/teamsix/book/service/BookService.java

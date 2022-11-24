@@ -37,6 +37,7 @@ public class BookPresentationImpl implements BookPresentation {
             System.out.println("1. List All Books");
             System.out.println("2. Search Book By ID");
             System.out.println("3. Add New Book");
+            System.out.println("4. Update Number of Copies");
             System.out.println("4. Exit");
             System.out.println("============================");
             
@@ -45,13 +46,16 @@ public class BookPresentationImpl implements BookPresentation {
     @Override
 	public void performMenu(int choice) {
 		Scanner scanner=new Scanner(System.in);
+                
 		switch (choice) {
+                    
 		case 1:
 			Collection<Book> books=bookService.getAllBooks();
 			for(Book book:books) {
 				System.out.println(book);
 			}
 			break;
+                        
 		case 2:
 			System.out.println("Enter Book ID : ");
 			int id=scanner.nextInt();
@@ -61,6 +65,7 @@ public class BookPresentationImpl implements BookPresentation {
 			else
 				System.out.println("Book with id "+id+" does not exist");
 			break;
+                        
                 case 3:
 			Book newBook = new Book();
 			
@@ -78,8 +83,23 @@ public class BookPresentationImpl implements BookPresentation {
 			else
 				System.out.println("Book with id "+newBook.getBookId()+" already exist, so cannot add it as a new book!");
 			
-			break;			
-		case 8:
+			break;	
+                        
+                case 4:
+                        System.out.println("Enter Book ID : ");
+                        int bkId = scanner.nextInt();
+                        
+                        System.out.println("Enter Increment Amount : ");
+                        int increment = scanner.nextInt();
+                        
+                        if(bookService.incrementNoOfCopies(bkId, increment)) {
+                            System.out.println("Book with ID : " + bkId + " copies incremented by " + increment);
+                        } else {
+                            System.out.println("Book with ID" + bkId + " does not exist");
+                        }
+                        break;
+                        
+		case 5:
 			System.out.println("Thanks for using Book Management System");
 			System.exit(0);
 		default:

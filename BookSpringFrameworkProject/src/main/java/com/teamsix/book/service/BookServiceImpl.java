@@ -43,6 +43,19 @@ public class BookServiceImpl implements BookService {
             return false;
         }
     }
+
+    @Override
+    public boolean incrementNoOfCopies(int id, int increment) {
+        
+        if(bookDao.updateNoOfCopies(id, increment) > 0) {
+            
+            return true;
+            
+        } else {
+            
+            return false;
+        }
+    }
     
     
 }

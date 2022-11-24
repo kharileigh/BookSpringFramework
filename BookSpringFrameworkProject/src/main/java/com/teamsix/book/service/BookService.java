@@ -21,4 +21,6 @@ public interface BookService {
     
     // BOOLEAN TO CHECK IF BOOK EXISTS BEFORE ADDING NEW BOOK OBJECT
     boolean addBook(Book book);
+    
+    boolean incrementNoOfCopies(int id, int increment);
 }
