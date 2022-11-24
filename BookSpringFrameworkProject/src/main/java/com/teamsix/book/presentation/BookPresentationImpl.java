@@ -12,14 +12,19 @@ import com.teamsix.book.service.BookService;
 
 import java.util.Collection;
 import java.util.Scanner;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
 
-
+@Component("bkPresentation")
 public class BookPresentationImpl implements BookPresentation {
     
     //Presentation will pass the request to service for processing and gives response to client
     private BookService bookService;
     
     // SETTER METHOD -- USED BY CONFIGURATION FILE 
+    @Autowired
+    @Qualifier("service")
     public void setBookService(BookService bookService) {
         this.bookService = bookService;
     }
