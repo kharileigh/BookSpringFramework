@@ -16,4 +16,5 @@ public interface BookDao {
     Collection<Book> getAllRecords();
     Book searchRecord(int id);
     int insertRecord(Book book);
+    int updateNoOfCopies(int id, int increment);
 }
